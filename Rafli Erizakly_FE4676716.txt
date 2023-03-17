@@ -1,0 +1,28 @@
+KASIR
+
+
+READ AND WRITE "nama barang" with string
+READ AND WRITE "harga" with number
+READ AND WRITE "kode barang" with string
+
+STORE "kode barang"
+if ("kode barang" != "kode barang")
+	print "kode barang salah"
+else 
+ 	print "nama barang"
+	print "harga barang"
+	READ AND WRITE "jumlah barang" with number
+	READ AND WRITE "total harga barang" with number
+	STORE "total harga barang" with CALCULATE "harga barang" multiply by "jumlah barang"
+end if
+
+READ AND WRITE "total"
+STORE "total" with CALCULATE + semua "total harga barang"
+
+if "sudah selesai belanja"
+		print "total"
+		print "bayar"
+else 
+	STORE "kode barang"
+
+end if
